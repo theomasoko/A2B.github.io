@@ -11,7 +11,37 @@
     <script src="javascrpt.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    
+    <style>
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.rating label:before {
+  content: '\2605';
+  font-size: 24px;
+}
+
+.rating input:checked ~ label {
+  color: #130bf8;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #6c5a0a;
+}
+
+    </style>
  
   </head>
   <body>
@@ -46,20 +76,18 @@
             <h2 style="margin-bottom: 100px;">DROP US A FEEDBACK</h2>
     
             <div class="rating">
-                <span>Rate your experience:</span>
-                <input type="radio" id="star5" name="rating" value="5">
-                <label for="star5">&#9733;</label>
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4">&#9733;</label>
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3">&#9733;</label>
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2">&#9733;</label>
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1">&#9733;</label>
-              </div>
-        
-            <div>
+              <input type="radio" id="star5" name="rating" value="5">
+              <label for="star5"></label>
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4"></label>
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3"></label>
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2"></label>
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1"></label>
+            </div>
+            
     
      <form class="feedback">
       <label for="full-name">Full Name:</label>
