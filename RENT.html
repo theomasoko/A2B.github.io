@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HOME</title>
+
+  <link rel="stylesheet" href="a2b.css">
+  <script src="javascrpt.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+    body {
+      background-image: linear-gradient(#091732, #F18B1D);
+    }
+
+    .feature {
+      margin: 100px;
+      margin-left: 30px;
+      display: flex;
+    }
+
+    h2 {
+      font-size: 60px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .container input,
+    .container label,
+    .container button {
+      margin: 10px 0;
+    }
+
+    label {
+      font-size: 30px;
+    }
+
+    input[type="datetime-local"] {
+      font-size: 20px;
+      color: #0f0000;
+    }
+
+    p {
+      margin: 50px;
+      margin-bottom: 0;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+    }
+    
+    
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <img class="logo" src="A2B PHOTOS/LOGO0998_n.jpg" alt="logo">
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="cars.html">CARS</a></li>
+        <li><a href="rates.html">RATES</a></li>
+        <li><a href="feedback.html">FEEDBACK</a></li>
+        <li><a href="t&c's.html">TERMS AND CONDITIONS</a></li>
+        <li><a href="RENT.html">RENT A CAR</a></li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+
+
+  <aside style="margin-top: 100px; color: #6281bf; class="requirements">
+    <h2>Rental Requirements</h2>
+    <ul>
+      <li>Minimum age: 21 years</li>
+      <li>Valid driver's license</li>
+      <li>Proof of insurance</li>
+      <li>Security deposit</li>
+    </ul>
+    <p>Please make sure to fulfill these requirements before renting a car. For more information, contact our customer support.</p>
+  </aside>
+
+  <section class="content">
+
+
+  
+    <div class="book">
+        <!-- Include the Google Maps JavaScript API -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+        <label for="start">Pick Up Date and Time:</label>
+        <input type="datetime-local" id="start" name="start">
+
+        <label for="end">Drop Off Date and Time:</label>
+        <input type="datetime-local" id="end" name="end">
+      </div>
+
+      
+    </form>
+
+    <form  class="container">
+
+        <label for="options">CHOOSE A CAR TO RENT:</label>
+        <select id="options" name="options" required>
+          <option value="">Select an option</option>
+          <option value="HONDAI FIT NEW MODEL"> RED HONDAI FIT NEW MODEL</option>
+          <option value="MAZDA DEMIO">MAZDA DEMIO</option>
+          <option value="Vitz">Vitz</option>
+          <option value="ALFDAD">ALFDAD </option>
+          <option value="ALPHAD">ALFDAD </option>
+        </select>
+  
+  
+
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+      <label for="idNumber">ID Number:</label>
+      <input type="text" id="idNumber" name="idNumber" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="licenseNumber">Driver's License Number:</label>
+      <input type="text" id="licenseNumber" name="licenseNumber" required>
+
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I agree to the Terms and Conditions</label>
+
+
+      <button class="butin"  type="submit">Submit</button>
+
+
+
+
+      
+     
+  </section>
+
+  <footer style="margin-top: 150px;" class="footer">
+
+    <nav>
+      <p>&copy; 2023 A2B. All rights reserved.</p>
+      <p><a href="#">ABOUT</a></p>
+      <p><a href="#">LOCATION</a></p>
+      <p><a href="#">CONTACTS: 74136271 or 74136271</a></p>
+      <p><a href="#"><i class="fab fa-facebook"></i></a></p>
+      <p><a href="#"><i class="fab fa-twitter"></i></a></p>
+      <p><a href="#"><i class="fab fa-instagram"></i></a></p>
+
+    </nav>
+
+  </footer>
+
+</body>
+
+</html>
