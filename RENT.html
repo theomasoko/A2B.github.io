@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>HOME</title>
+  <title>rent</title>
 
   <link rel="stylesheet" href="a2b.css">
   <script src="javascrpt.js"></script>
@@ -89,36 +89,42 @@
 
 
 
-  <aside style="margin-top: 100px; color: #6281bf; class="requirements">
+  <aside style="margin-top: 100px; color: #6281bf; class="requirements" ;>
     <h2>Rental Requirements</h2>
     <ul>
       <li>Minimum age: 21 years</li>
       <li>Valid driver's license</li>
-      <li>Proof of insurance</li>
+      <li>Physically and mentally fit to drive </li>
       <li>Security deposit</li>
     </ul>
     <p>Please make sure to fulfill these requirements before renting a car. For more information, contact our customer support.</p>
   </aside>
 
-  <section class="content">
+  <section  style="margin-top: 230px;" class="content">
 
 
   
-    <div class="book">
-        <!-- Include the Google Maps JavaScript API -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-
-        <label for="start">Pick Up Date and Time:</label>
+    <div  style="display: flex;" class="book">
+ 
+      <div style=" margin-left: 40px;"  > <label for="start">Pick Up Date and Time:</label>
         <input type="datetime-local" id="start" name="start">
+</div>
+       
 
-        <label for="end">Drop Off Date and Time:</label>
-        <input type="datetime-local" id="end" name="end">
+    <div style=" margin-right: 40px;" > <label for="end">Drop Off Date and Time:</label>
+        <input  type="datetime-local" id="end" name="end">
+      </div>
+       
+
+        
       </div>
 
       
     </form>
 
-    <form  class="container">
+    <form class="container">
+
+      
 
         <label for="options">CHOOSE A CAR TO RENT:</label>
         <select id="options" name="options" required>
@@ -131,6 +137,11 @@
         </select>
   
   
+        <label for="pickup-location">Pick-up Location:</label>
+        <input type="text" id="pickup-location" name="pickup-location" required>
+
+        <label for="dropoff-location">Drop-off Location:</label>
+        <input type="text" id="dropoff-location" name="dropoff-location" required>
 
       <label for="full-name">Full Name:</label>
       <input type="text" id="full-name" name="full-name" required>
@@ -168,13 +179,13 @@
       <button class="butin"  type="submit">Submit</button>
 
 
-
+    </form>
 
       
      
   </section>
 
-  <footer style="margin-top: 150px;" class="footer">
+  <footer style="margin-top: 230px;" class="footer">
 
     <nav>
       <p>&copy; 2023 A2B. All rights reserved.</p>
