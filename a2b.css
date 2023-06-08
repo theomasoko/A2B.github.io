@@ -49,6 +49,7 @@ nav li a:hover {
 
 /* Responsive adjustments */
 
+
 @media (max-width: 768px) {
   .scroll-nav {
     overflow-x: auto;
@@ -63,22 +64,22 @@ nav li a:hover {
   .scroll-nav li {
     padding: 0 10px;
   }
+
+  nav ul {
+  list-style-type: none;
+  margin: 30px;
+  margin-left: 0px;
+  padding: 0;
+  display: flex;
 }
 
 
+nav li {
+  margin-right: 1px;
+}
 
-@media (max-width: 768px) {
-  .logo {
-    width: 80px;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  nav li {
-    margin-right: 0;
-    margin-bottom: 10px;
+.logo {
+    width: 70px;
   }
 }
   /* header */
