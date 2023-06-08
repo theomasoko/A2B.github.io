@@ -48,6 +48,25 @@ nav li a:hover {
 }
 
 /* Responsive adjustments */
+
+@media (max-width: 768px) {
+  .scroll-nav {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .scroll-nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .scroll-nav li {
+    padding: 0 10px;
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .logo {
     width: 80px;
